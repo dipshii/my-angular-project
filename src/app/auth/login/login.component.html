@@ -1,0 +1,68 @@
+<section>
+    <form fxLayout="column" fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input
+          type="email"
+          matInput
+          placeholder="Your email"
+          formControlName="email">
+        <mat-hint>Please enter a valid email.</mat-hint>
+        <mat-error>Invalid or missing email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          type="password"
+          matInput
+          placeholder="Your password"
+          formControlName="password">
+        <mat-hint>Please enter your password.</mat-hint>
+        <mat-error>Missing password.</mat-error>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">Submit</button>
+    </form>
+  </section>
+
+
+<!-- <mat-toolbar>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="form-center" #f="ngForm" (ngSubmit)="OnSubmit(f)">
+           <mat-form-field class="full-width">
+              <mat-label>Email</mat-label>
+              <input  matInput  placeholder="Email" ngModel name="email" required #emailInput="ngModel">
+              <mat-error *ngIf="emailInput.hasError('required')">field must non empty</mat-error>
+              <mat-error *ngIf="!emailInput.hasError('required')">email is invalid</mat-error>
+           </mat-form-field>
+           <mat-form-field class="full-width" hintLabel="should be atleast 6 letters">
+            
+              <mat-label>Password</mat-label>
+              <input  matInput  placeholder="Password" ngModel name="password">
+           </mat-form-field>
+        </form>
+     </mat-card-content>
+     <mat-card-actions>
+        <button mat-raised-button color="primary">LOGIN</button>
+     </mat-card-actions>
+  </mat-card>
+ -->
+
+
+
+
+
+<!-- <div class="form-example">
+    <form fxLayout="column" fxLayoutAlign="center">
+        <mat-form-field>
+            <input type="email" matInput placeholder="email" >
+            
+        </mat-form-field>
+        <mat-form-field>
+            <input type="password" matInput placeholder="password" >
+        </mat-form-field>
+
+    </form>
+</div> -->

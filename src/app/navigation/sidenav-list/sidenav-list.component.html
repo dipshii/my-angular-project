@@ -1,0 +1,22 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/badge" (click)="onClose()" *ngIf="isAuth">
+        
+        <mat-icon>badge</mat-icon>
+        <span class="nav-caption">Badge</span>
+    </a>
+    <a mat-list-item routerLink="/tree" (click)="onClose()" *ngIf="isAuth">
+        
+        <mat-icon>account_tree</mat-icon>
+        <span class="nav-caption">Tree</span>
+    </a> 
+    <a mat-list-item routerLink="/tab" (click)="onClose()" *ngIf="isAuth">
+        
+        <mat-icon>Tab</mat-icon>
+        <span class="nav-caption" *ngIf="isAuth">Tab</span>
+    </a>
+    <a mat-list-item routerLink="/tab" (click)="onClose()" *ngIf="isAuth">
+        
+        <mat-icon>Tab</mat-icon>
+        <span class="nav-caption" *ngIf="isAuth">Tab</span>
+    </a>
+   </mat-nav-list>

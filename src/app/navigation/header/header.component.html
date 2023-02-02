@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <div *ngIf="isAuth">
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div><a *ngIf="isAuth" routerLink="/">Logo</a></div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+    <img src="\assets\ar.png">
+    </div>
+    
+    <div class="new">
+        <a *ngIf="!isAuth" routerLink="/signup">SIGNUP</a>
+        <a *ngIf="!isAuth" routerLink="/login">Login</a>
+        <a style="cursor: pointer" (click)="onLogout()" *ngIf="isAuth" >Logout</a>
+    </div>
+</mat-toolbar>

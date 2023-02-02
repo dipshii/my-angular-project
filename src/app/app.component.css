@@ -1,0 +1,26 @@
+mat-sidenav-container,mat-sidenav-content,mat-sidenav{
+    height: 100%;
+}
+mat-sidenav{
+    width: 250px;;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
+a:hover,a:active{
+    color: lightgray;
+}
+.new{
+    position:absolute;
+    top: 10px; right: 10px; 
+    text-align: right; 
+    display: flex;
+   column-gap: 30px;
+}
+.nav-caption{
+    display:inline-block;
+    padding-left:6px ;
+}

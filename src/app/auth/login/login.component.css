@@ -1,0 +1,35 @@
+mat-form-field {
+  width: 300px;
+  margin: 20px;
+}
+
+
+
+
+
+
+  /* .my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    align-items: center;
+  
+    
+  }
+  .full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+  .my-card{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .middle{
+    
+    align-items: center;
+  } */
